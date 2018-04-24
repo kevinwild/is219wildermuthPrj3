@@ -39,17 +39,22 @@
             <div class="thumbnail" ng-repeat="movie in movies">
 
 					<img class="poster"  src="{{ movie.posters[0] }}" />
-					<div class="imageInfo" >{{ movie.index }}</div>
+					<div class="imageInfo" >{{ movie.index }}</div>	
 					
 					<p class="title" >{{ movie.title }} ( {{ movie.country }} )</p> 
 					<p class="score" ><i class="fa fa-star" aria-hidden="true"></i> {{ movie.iscore }} </p>
 					<p class="runtime" >Runtime: {{ movie.runtime }}</p> 
 					<p class="released" >Released: {{ movie.released}} | Rated: {{ movie.rating }}</p>
-					<p class="websites">Websites: <a src="{{ movie.website }}">Website</a> | <a src="{{ movie.imdb }}">IMDB</a></p>
+					<p class="websites">Websites: <a href="{{ movie.website }}" target="_blank">Website</a> | <a href="{{ movie.imdb }}" target="_blank">IMDB</a></p>
 					
 		            <div class="social">
-		              <p class="likes"><i class="fa fa-thumbs-up" aria-hidden="true"></i> {{ movie.likes }}</p>
-		              <p class="dislikes"><i class="fa fa-thumbs-down" aria-hidden="true"></i> {{ movie.dislikes }}</p>
+			              <p class="likes" ng-click="like($index)">
+			              	<i class="fa fa-thumbs-up" aria-hidden="true"></i> {{ movie.likes }}
+			              </p>
+		              
+		              <p class="dislikes" ng-click="dislike($index)">
+		              	<i class="fa fa-thumbs-down" aria-hidden="true"></i> {{ movie.dislikes }}
+		              </p>
 		            </div>
             </div> 
         </div>

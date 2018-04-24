@@ -1,6 +1,7 @@
 app.controller('HomeController', ['$scope', function($scope) {
 	
-	
+
+
 	/* THESE ARE YOUR LIST OF MOVIES AND ACCOMPANYING METADATA
 	//	
 	// 	They are in the following format:
@@ -28,7 +29,7 @@ app.controller('HomeController', ['$scope', function($scope) {
       country:	'USA',
       posters:	['img/shawshank.jpg','img/shawshank2.jpg','img/shawshank3.jpg'],
       imdb:		'http://www.imdb.com/title/tt0111161',
-      website:	'https://www.facebook.com/ShawshankRedemptionFilm',
+      website:	'http://www.facebook.com/ShawshankRedemptionFilm',
       likes:	1021,
       dislikes:	122,
       posterindex: 0
@@ -42,7 +43,7 @@ app.controller('HomeController', ['$scope', function($scope) {
       country:	'USA',
       posters:	['img/godfather.jpg','img/godfather_2.jpg','img/godfather_3.jpg'],
       imdb:		'[http://www.imdb.com/title/tt0068646',
-      website:	'https://www.facebook.com/thegodfather',
+      website:	'http://www.facebook.com/thegodfather',
       likes:	928,
       dislikes:	109,
       posterindex: 0
@@ -56,7 +57,7 @@ app.controller('HomeController', ['$scope', function($scope) {
       country:	'USA',
       posters:	['img/godfather2.jpg','img/godfather2_2.jpg'],
       imdb:		'http://www.imdb.com/title/tt0071562',
-      website:	'https://www.facebook.com/thegodfather',
+      website:	'http://www.facebook.com/thegodfather',
       likes:	855,
       dislikes:	99,
       posterindex: 0
@@ -84,7 +85,7 @@ app.controller('HomeController', ['$scope', function($scope) {
       country:	'USA',
       posters:	['img/schindlerslist.jpg'],
       imdb:		'http://www.imdb.com/title/tt0108052',
-      website:	'https://www.uphe.com/schindlers-list',
+      website:	'http://www.uphe.com/schindlers-list',
       likes:	812,
       dislikes:	101,
       posterindex: 0
@@ -108,10 +109,13 @@ app.controller('HomeController', ['$scope', function($scope) {
 	
 	
 	/* ADD FUNCTIONS FOR STEP 7 HERE */
-		
 	
-	
-	
+
+      $scope.like = function(index) { return this.movie.likes += 1; };
+     $scope.dislike = function(index) { return this.movie.dislikes += 1; };
+     // $scope.posterClick = function(number) { return number += 1; };
+     // $scope.timeText = function(number) { return number += 1; };
+
 	
 	
 	
