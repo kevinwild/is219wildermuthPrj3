@@ -89,7 +89,54 @@ app.controller('HomeController', ['$scope', function($scope) {
       likes:	812,
       dislikes:	101,
       posterindex: 0
-	}
+	},
+
+
+
+    { 
+      title:      'Rocky: IV', 
+      iscore:     6.8,
+      rating:     'pg',
+      runtime:    131,
+      released:   new Date('1985', '11', '27'),
+      country:    'USA',
+      posters:    ['img/rocky.jpg','img/rocky2.jpg'],
+      imdb:       'https://www.themoviedb.org/movie/1374-rocky-iv',
+      website:    'http://www.facebook.com/rocky',
+      likes:      1235,
+      dislikes:   212,
+      posterindex: 0
+      },
+    { 
+      title:      'Jaws', 
+      iscore:     8.0,
+      rating:     'PG',
+      runtime:    152,     
+      released:   new Date('1975', '6', '20'),
+      country:    'USA',
+      posters:    ['img/jaws.jpg', 'img/jaws.jpg'],
+      imdb:       'https://www.imdb.com/title/tt0073195/?ref_=tt_mv_close',
+      website:    'http://www.facebook.com/jaws',
+      likes:      1002,
+      dislikes:   58,
+      posterindex: 0
+      },
+    { 
+      title:      'Resident Evil', 
+      iscore:     7.9,
+      rating:     'R',
+      runtime:    195,
+      released:   new Date('2002', '3', '15'),
+      country:    'USA',
+      posters:    ['img/residentEvil.jpg','img/residentEvil2.jpg'],
+      imdb:       'https://www.imdb.com/title/tt0120804/?ref_=nv_sr_1',
+      website:    'http://www.uphe.com/schindlers-list',
+      likes:      812,
+      dislikes:   101,
+      posterindex: 0
+      }
+
+
 	
 	
   ];

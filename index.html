@@ -34,34 +34,32 @@
     <div class="main" >
       
       <div class="container">
-
-        <div class="col-md-6"> 
+	     <div class="col-md-6"> 
             <div class="thumbnail" ng-repeat="movie in movies">
 
 
-					<img class="poster" ng-src="{{ movie.posters[movie.posterindex] }}" ng-click="posterClick($index)" />
-					<div class="imageInfo" >{{ movie.index }}</div>	
-					
-					<p class="pull-right">Poster {{ movie.posterindex + 1 }} of {{ movie.posters.length }}</p>
+						<img class="poster" ng-src="{{ movie.posters[movie.posterindex] }}" ng-click="posterClick($index)" />
+						<div class="imageInfo" >{{ movie.index }}</div>	
+						
+						<p class="pull-right">Poster {{ movie.posterindex + 1 }} of {{ movie.posters.length }}</p>
 
-					<p class="title" >{{ movie.title }} ( {{ movie.country }} )</p> 
-					<p class="score" ><i class="fa fa-star" aria-hidden="true"></i> {{ movie.iscore }} </p>
-					<p class="runtime" >Runtime: {{ movie.runtime }}</p> 
-					<p class="released" >Released: {{ movie.released}} | Rated: {{ movie.rating }}</p>
-					<p class="websites">Websites: <a href="{{ movie.website }}" target="_blank">Website</a> | <a href="{{ movie.imdb }}" target="_blank">IMDB</a></p>
-					
-		            <div class="social">
-			              <p class="likes" ng-click="like($index)">
-			              	<i class="fa fa-thumbs-up" aria-hidden="true"></i> {{ movie.likes }}
+						<p class="title" >{{ movie.title }} ( {{ movie.country }} )</p> 
+						<p class="score" ><i class="fa fa-star" aria-hidden="true"></i> {{ movie.iscore }} </p>
+						<p class="runtime" >Runtime: {{ movie.runtime }}</p> 
+						<p class="released" >Released: {{ movie.released}} | Rated: {{ movie.rating }}</p>
+						<p class="websites">Websites: <a href="{{ movie.website }}" target="_blank">Website</a> | <a href="{{ movie.imdb }}" target="_blank">IMDB</a></p>
+						
+			            <div class="social">
+				              <p class="likes" ng-click="like($index)">
+				              	<i class="fa fa-thumbs-up" aria-hidden="true"></i> {{ movie.likes }}
+				              </p>
+			              
+			              <p class="dislikes" ng-click="dislike($index)">
+			              	<i class="fa fa-thumbs-down" aria-hidden="true"></i> {{ movie.dislikes }}
 			              </p>
-		              
-		              <p class="dislikes" ng-click="dislike($index)">
-		              	<i class="fa fa-thumbs-down" aria-hidden="true"></i> {{ movie.dislikes }}
-		              </p>
-		            </div>
-            </div> 
-        </div>
-
+			            </div>
+	            </div> 
+	        </div>
       </div>
     </div>
 
