@@ -66,7 +66,7 @@ app.controller('HomeController', ['$scope', function($scope) {
       title:	'The Dark Knight', 
       iscore:	8.9,
       rating:	'PG-13',
-      runtime:	152,
+      runtime:	152,     
       released:	new Date('2008', '07', '18'),
       country:	'USA',
       posters:	['img/darkknight.jpg','img/darkknight2.jpg'],
@@ -110,10 +110,17 @@ app.controller('HomeController', ['$scope', function($scope) {
 	
 	/* ADD FUNCTIONS FOR STEP 7 HERE */
 	
-
       $scope.like = function(index) { return this.movie.likes += 1; };
-     $scope.dislike = function(index) { return this.movie.dislikes += 1; };
-     // $scope.posterClick = function(number) { return number += 1; };
+      $scope.dislike = function(index) { return this.movie.dislikes += 1; };
+      $scope.posterClick = function(index) { 
+            if(this.movie.posterindex >= this.movie.posters.length - 1){
+                  return this.movie.posterindex = 0;
+            }
+            else {
+                  return this.movie.posterindex += 1;
+            }
+      
+      };
      // $scope.timeText = function(number) { return number += 1; };
 
 	
