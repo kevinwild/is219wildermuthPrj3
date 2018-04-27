@@ -1,0 +1,26 @@
+{
+  "name": "is219prj3",
+  "version": "1.0.0",
+  "description": "This is the final class project",
+  "main": "app.js",
+  "directories": {
+    "example": "examples"
+  },
+  "dependencies": {
+    "http-server": "^0.11.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinwild/is219wildermuthPrj3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevinwild/is219wildermuthPrj3/issues"
+  },
+  "homepage": "https://github.com/kevinwild/is219wildermuthPrj3#readme"
+}

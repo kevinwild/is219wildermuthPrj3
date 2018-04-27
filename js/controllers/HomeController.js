@@ -114,7 +114,7 @@ app.controller('HomeController', ['$scope', function($scope) {
       runtime:    152,     
       released:   new Date('1975', '6', '20'),
       country:    'USA',
-      posters:    ['img/jaws.jpg', 'img/jaws.jpg'],
+      posters:    ['img/jaws.jpg', 'img/jaws2.jpg'],
       imdb:       'https://www.imdb.com/title/tt0073195/?ref_=tt_mv_close',
       website:    'http://www.facebook.com/jaws',
       likes:      1002,

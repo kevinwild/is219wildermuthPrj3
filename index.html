@@ -34,8 +34,9 @@
     <div class="main" >
       
       <div class="container">
-	     <div class="col-md-6"> 
-            <div class="thumbnail" ng-repeat="movie in movies">
+		  <div class="row">
+	     <div class="col-sm-6" ng-repeat="movie in movies">
+            <div class="thumbnail">
 
 
 						<img class="poster" ng-src="{{ movie.posters[movie.posterindex] }}" ng-click="posterClick($index)" />
@@ -60,6 +61,7 @@
 			            </div>
 	            </div> 
 	        </div>
+		  </div>
       </div>
     </div>
 
