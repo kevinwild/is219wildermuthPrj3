@@ -168,8 +168,23 @@ app.controller('HomeController', ['$scope', function($scope) {
             }
       
       };
-     // $scope.timeText = function(number) { return number += 1; };
 
+      $scope.timeText = function(mins){
+        var hrCount  = 0;
+          if(mins % 60 > 0){
+            while(true){
+              if(mins < 60){
+                return hrCount + "h " + mins + "m";
+              }
+              else {
+                mins = mins - 60;
+                hrCount++;
+              }
+            }
+          }else {
+            return mins + "m";
+          }
+      }
 	
 	
 	
